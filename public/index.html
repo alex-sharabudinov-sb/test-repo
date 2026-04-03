@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Operations Planner</title>
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<div class="app">
+  <aside class="sidebar">
+    <div class="logo"><span>📋</span> Ops Planner</div>
+    <nav>
+      <a href="#" data-view="dashboard" class="active"><span class="icon">📊</span> Dashboard</a>
+      <div class="nav-section">Plans</div>
+      <a href="#" data-view="company"><span class="icon">🏢</span> Company Plans</a>
+      <a href="#" data-view="department"><span class="icon">👥</span> Department Plans</a>
+      <div class="nav-section">Time Period</div>
+      <a href="#" data-view="weekly"><span class="icon">📅</span> Weekly Plans</a>
+      <a href="#" data-view="monthly"><span class="icon">🗓️</span> Monthly Plans</a>
+      <a href="#" data-view="yearly"><span class="icon">📆</span> Yearly Plans</a>
+      <div class="nav-section">Manage</div>
+      <a href="#" data-view="departments"><span class="icon">⚙️</span> Departments</a>
+    </nav>
+  </aside>
+
+  <main class="main" id="main-content"></main>
+</div>
+
+<div class="mobile-nav">
+  <a href="#" data-view="dashboard" class="active">📊</a>
+  <a href="#" data-view="company">🏢</a>
+  <a href="#" data-view="department">👥</a>
+  <a href="#" data-view="weekly">📅</a>
+  <a href="#" data-view="monthly">🗓️</a>
+  <a href="#" data-view="yearly">📆</a>
+</div>
+
+<div class="modal-overlay" id="modal-overlay">
+  <div class="modal" id="modal"></div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
